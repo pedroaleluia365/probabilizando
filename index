@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Probabilizando</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Probabilizando 🎲</h1>
+    <p>Aprenda probabilidade de forma clara, prática e divertida!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#conceito">Conceito</a></li>
+      <li><a href="#tipos">Tipos</a></li>
+      <li><a href="#calculo">Cálculo</a></li>
+      <li><a href="#grafico">Gráfico</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#desafio">Desafio</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        Este site foi criado pelos alunos do 2º ano MB como uma ferramenta de apoio ao ensino de probabilidade, conectando teoria com prática.
+      </p>
+      <h3>Equipe</h3>
+      <ul>
+        <li>Pedro Augusto Aleluia da Rocha</li>
+        <li>Pedro Domingos Tinoco Ribeiro</li>
+        <li>Manuela Viana Ferreira</li>
+        <li>Sofia Ronsisvalle Maciel Toledo</li>
+        <li>Izabela Moraes Meira Rodríguez</li>
+        <li>Sophia Maria Azevedo Santos Garcia</li>
+      </ul>
+    </section>
+
+    <section id="conceito">
+      <h2>O que é Probabilidade?</h2>
+      <p>Probabilidade é o ramo da matemática que estuda a chance de um evento acontecer.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dice-4-b.svg/320px-Dice-4-b.svg.png" alt="Dado" class="imagem"/>
+    </section>
+
+    <section id="tipos">
+      <h2>Tipos de Probabilidade</h2>
+      <ul>
+        <li><strong>Clássica:</strong> Eventos igualmente prováveis.</li>
+        <li><strong>Frequencial:</strong> Baseada em experimentos repetidos.</li>
+        <li><strong>Subjetiva:</strong> Baseada em opinião ou crença.</li>
+      </ul>
+    </section>
+
+    <section id="calculo">
+      <h2>Como Calcular?</h2>
+      <p><strong>Fórmula:</strong> P(E) = casos favoráveis ÷ casos possíveis</p>
+      <p>Ex: Qual a chance de sair um número par num dado? → 3/6 = 50%</p>
+    </section>
+
+    <section id="grafico">
+      <h2>Gráfico: Probabilidade em um Dado</h2>
+      <canvas id="graficoDado" width="400" height="300"></canvas>
+    </section>
+
+    <section id="quiz">
+      <h2>Quiz Interativo</h2>
+      <p>1. Qual a chance de sair "cara" ao jogar uma moeda?</p>
+      <button onclick="responderQuiz(1)">a) 25%</button>
+      <button onclick="responderQuiz(2)">b) 50%</button>
+      <button onclick="responderQuiz(3)">c) 75%</button>
+      <p id="respostaQuiz"></p>
+    </section>
+
+    <section id="desafio">
+      <h2>🎯 Desafio do Dia</h2>
+      <p>Você joga dois dados. Qual a chance de a soma dar 7?</p>
+      <button onclick="mostrarDesafio()">Mostrar resposta</button>
+      <p id="respostaDesafio" style="display:none;">Resposta: Existem 6 combinações possíveis de soma 7 em 36 → 6/36 = 1/6 ≈ 16,67%</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 • Projeto Interdisciplinar – 2º MB</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
